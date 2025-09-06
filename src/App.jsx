@@ -10,8 +10,9 @@ function App() {
   }
 
   const calculateHandler = () => {
-    if (expression.trim() == "") {
-      setResult("Error")
+    if (expression.trim() === "") {
+      setResult("Error");
+      return;
     }
     try {
       const output = eval(expression);

@@ -30,7 +30,12 @@ function App() {
     <>
       <h1>React Calculator</h1>
       <div className="card">
-        <input value={expression} readOnly />
+        <input
+          type="text"
+          value={result}
+          readOnly
+        />
+
       </div>
       <div>{result}</div>
 
